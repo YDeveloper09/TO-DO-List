@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+    font-family: "Cagliostro", sans-serif;
+    background-color: #efebeb;
+}
+
+h1{
+    padding-top: 3rem;
+}
+
+.container{
+    margin: 5% auto;
+    height: auto;
+    width: 500px;
+    border-radius: 27px;
+    box-shadow:  -16px 16px 32px #b7b4b4,
+             16px -16px 32px #ffffff;
+}
+
+#inputText{
+    height: 2rem;
+    width: 70%;
+    border-style: none;
+    background-color: #efebeb;
+    border-bottom: 2px solid red;
+    margin-bottom: 1rem;
+}
+
+#btnAdd{
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 100%;
+    background-color: black;
+}
+
+#container-items{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    display:grid;
+    grid-template-columns: 65% 10% 10%;
+}
+
+#list-items{
+    list-style-type: none;
+    margin-right: 3rem;
+}
+#edit,#delete{
+    border-style: none;
+    background-color: transparent;
+}
+
+#mode{
+   border-style: none;
+   background-color: #efebeb;
+    margin-top: 2rem;
+}
+
+#inputText:focus{
+    outline-style: none;
+}
+
+@media only screen and (max-width: 844px) {
+    #mode{
+         margin-bottom: 2rem;
+     }
+}
