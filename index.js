@@ -2,7 +2,7 @@ const BtnAdd = document.querySelector("#btnAdd");
 let inputTxt = document.querySelector("#inputText");
 const Mode = document.querySelector("#mode");
 const container = document.querySelector(".container");
-const changeIcon = document.querySelector(".fa-moon");
+const changeIcon = document.querySelector(".fa-sun-bright");
 
 const addNewItems = () => {
     const addDiv = document.createElement("div");
@@ -50,8 +50,8 @@ Mode.addEventListener("click", changeMode = () => {
     const selectEditIcon = document.querySelectorAll(".fa-pen-to-square")
     const selectDeleteIcon = document.querySelectorAll(".fa-trash")
     const selectAddIcon = document.querySelector(".fa-plus");
-    if (changeIcon.classList.contains("fa-moon")){
-        changeIcon.setAttribute("class", "fa-solid fa-sun fa-3x");
+    if (changeIcon.classList.contains("fa-sun-bright")){
+        changeIcon.setAttribute("class", "fa-solid fa-moon-stars fa-3x");
         changeIcon.setAttribute("style", "color:white");
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
@@ -67,7 +67,7 @@ Mode.addEventListener("click", changeMode = () => {
         BtnAdd.style.backgroundColor = "white"
         selectAddIcon.setAttribute("style","color:black");
     } else {
-        changeIcon.setAttribute("class", "fa-sharp fa-solid fa-moon fa-3x")
+        changeIcon.setAttribute("class", "fa-thin fa-sun-bright fa-3x")
         changeIcon.setAttribute("style", "color:black");
         document.body.style.backgroundColor = "#efebeb";
         document.body.style.color = "black";
